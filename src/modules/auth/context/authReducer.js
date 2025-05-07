@@ -5,8 +5,14 @@ export const authReducer = (state, action) => {
             return {
                 ...state,
                 user: action.payload.user,
-                token: action.payload.user
+                token: action.payload.token
             };
+        case "REGISTER": 
+            return {
+                ...state,
+                user: action.payload.user,
+                token: null
+            }    
         case "LOGOUT":
             return {
                 ...state,

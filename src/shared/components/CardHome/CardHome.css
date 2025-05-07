@@ -1,0 +1,75 @@
+
+.titulo-seccion{
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform:uppercase;
+}
+.card{
+    width: 17rem;
+    height: 24rem;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.card-header{
+margin-top: 40px;
+}
+
+.imagen-zapatilla{
+    width: 100%;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 4rem;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.contenedor-title-precio{
+    line-height: 3px;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.card-title{
+    font-size: 18px;
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 600;  
+}
+
+.card-precio{
+    font-size: 14px;
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 500;  
+    color:slategrey;
+}
+
+.contenedor-boton{
+    float: right;
+    align-items: center;
+    margin-right: 0rem;
+}
+
+.boton-card{
+    font-family: "Red Hat Mono", monospace;
+    font-size: 20px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0%;
+    width: 60px;
+    height: 68px;
+}
+

@@ -1,0 +1,76 @@
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 475px;
+    margin-right: 0px;
+    
+}
+
+.image-banner { 
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    position: absolute;
+    top: -6%;
+    left: 0%;
+    translate:(-50%, -50%);
+}
+
+.video-container {
+    flex: 1; 
+}
+
+.video-container video {
+    width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
+    object-fit: cover;
+}
+
+.huincha {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    box-sizing: border-box;
+    height: 34px;
+    text-align:justify;
+    overflow: hidden;
+}
+
+.container-texto-huincha{
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 20px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.texto-huincha {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Red Hat Mono", monospace;
+    text-transform:uppercase;
+    letter-spacing: 0.2rem;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(-100px);
+    }
+}

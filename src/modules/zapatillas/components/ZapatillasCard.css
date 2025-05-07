@@ -1,0 +1,43 @@
+
+
+.card{
+    width: 17rem;
+    height: 24rem;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 7rem;
+    overflow: hidden;
+    margin-top: 17rem;
+}
+
+.titulos-card h2{
+    font-size: 18px;
+    font-family: "Red Hat Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.titulos-card p{
+    font-size: 14px;
+    font-family: "Red Hat Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor-boton{
+    float: right;
+    align-items: center;
+    margin-right: 0rem;
+
+}
