@@ -1,8 +1,8 @@
 
 
 export const registerRules = {
-    nonbre: (value) => (/^[a-zA-Z]+$/.test(value) && value.length >= 3 && value.length <= 20),
-    apellido: (value) => (/^[a-zA-Z]+$/.test(value) && value.length >= 3 && value.length <= 50),
+    nombre: (value) => (/^[a-zA-Z]+$/.test(value) && value.length <= 3 && value.length <= 20),
+    apellido: (value) => (/^[a-zA-Z]+$/.test(value) && value.length <= 3 && value.length <= 50),
     correo: (value) => {
         if(!value) return 'El Correo es requerido';
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

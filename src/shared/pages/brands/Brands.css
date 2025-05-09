@@ -1,0 +1,10 @@
+.contenedor-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+}
+
+.brands{
+    width: 90%;
+}

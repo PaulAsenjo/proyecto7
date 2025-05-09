@@ -1,0 +1,80 @@
+.contenedor-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-image: url("/public/imagenes/footer.png");
+    gap: 40px;
+}
+
+.contenedor-footer image {
+    width: 80%;
+}
+
+.contenedor-info-footer{
+    display: flex;
+    gap: 33rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.contenedor-rrss {
+    float:left;
+    
+}
+
+.titulo-rrss{
+    font-family: "Red Hat Mono", monospace;
+    font-size: 22px;
+    text-transform:uppercase;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+}
+
+.imagen-rrss{
+    width: 70%;
+}
+
+.contenedor-account{
+    float: right;
+    
+}
+
+.titulo-registro {
+    font-family: "Red Hat Mono", monospace;
+    text-align: right;
+    font-size: 22px;
+    text-transform:uppercase;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.texto-registro {
+    font-family: "Red Hat Mono", monospace;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    white-space: pre-wrap;
+}
+
+.botton-register{
+    width: 70px;
+    height: 40px;
+    float: right;
+    margin-left: 20rem;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}

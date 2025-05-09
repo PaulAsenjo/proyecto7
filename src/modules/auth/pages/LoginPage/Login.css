@@ -1,0 +1,9 @@
+.titulo {
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform:uppercase;
+}

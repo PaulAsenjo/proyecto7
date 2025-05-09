@@ -1,3 +1,4 @@
+import { Footer } from "../../../../shared/components/Footer/Footer";
 import { ZapatillaCard } from "../../components/ZapatillasCard";
 import { useFetchProducts } from "../../hooks/useFetchProducts"
 
@@ -8,11 +9,12 @@ export const ZapatillasPage = () => {
     const { zapatillas, loading, error } = useFetchProducts();
 
     return (
+        <>
         <div>
             <h1 className="titulo">
                 Nuestros Productos
             </h1>
-
+            
             {loading && (
                 <div>
                     <div className="spinner"></div>
@@ -31,12 +33,16 @@ export const ZapatillasPage = () => {
                 </div>
             )}
 
-            <div>
+            <div className="contenedor-zapatillas">  
                 {zapatillas.map(zapatilla => (
                     <ZapatillaCard key={zapatilla._id} zapatilla={zapatilla} />
                 ))}
             </div>
-        </div>
+            
+            </div>
+            <Footer />
+        </>
+
 
     )
 }

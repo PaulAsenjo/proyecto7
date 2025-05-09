@@ -1,5 +1,8 @@
 import useCartContext from "../context/CartContext";
 
+import "./CardAddButton.css"
+
+
 
 export const CartAddButton = ({ product }) => {
     const addItem = useCartContext((state) => state.addItem);
@@ -12,9 +15,9 @@ export const CartAddButton = ({ product }) => {
     return(
         <button
             onClick={handleAddToCart}
-            className="bg-stone-950 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors duration-300 "
+           className="boton-agregar"
         >
-            Agregar al carrito
+            Agregar +
         </button>
     )
 }

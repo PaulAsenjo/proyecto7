@@ -1,5 +1,6 @@
 import { envLoader } from "../../../config/envLoader";
 import { formatCurrency } from "../../../shared/utils/formatCurrency";
+import { MercadoPagoButton } from "../../payments/components/MercadoPagoButton";
 import useCartContext from "../context/CartContext"
 import { CartProduct } from "./CartItem";
 
@@ -24,11 +25,11 @@ export const CartSideBar = ({ onClose }) => {
               className="fixed inset-0 bg-gray-800/30 backdrop-blur-sm transition-opacity duration-300"
             ></div>
 
-            <div className="fixed inset-y-0 right-0 max-w-md bg-white shadow-2xl transform transition-all ease-in-out duration-300">
+<div className="fixed inset-y-0 right-0 max-w-md bg-white shadow-2xl transform transition-all ease-in-out duration-300">
                 <div className="h-full flex flex-col overflow-y-auto">
                     <div className="px-4 py-6 sm:px-6 border-b border-gray-200">
                         <h2 className="text-lg font-medium text-gray-900">
-                            Carro de Compras
+                            Carrito de compras
                         </h2>
                         <button
                             onClick={onClose}
@@ -37,52 +38,50 @@ export const CartSideBar = ({ onClose }) => {
                             X
                         </button>
                     </div>
-                
-                
-                <div className="flex-1 px-4 sm:px-6 overflow-y-auto">
-                    {
-                        products.length === 0 ? (
-                            <p className="text-center py-8">Tu Carrito esta vacio</p>
-                        ) : (
-                            <div className="flow-root">
-                                <ul className="divide-y divide-gray-300">
-                                    {
-                                        products.map((product) => (
-                                          <CartProduct key={product._id} product={product} />  
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        )
-                    }
-                </div>
-                
-                {
-                    products.length > 0 && (
-                        <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
-                            <div className="flex justify-between text-base font-medium text-gray-900">
-                                <p>Total</p>
-                                <p>{formatCurrency(totalPrice, optionsCurrency)}</p>
-                            </div>
 
-                            <div className="mt-6">
-                               <button
-                                  onClick={handleCheckout}
-                                  className="bg-stone-950 w-full flex item-center justify-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base text-stone-50"
-                                  >
-                                    Pagar
-                               </button> 
+                    <div className="flex-1 px-4 sm:px-6 overflow-y-auto">
+                        {
+                            products.length === 0 ? (
+                                <p className="text-center py-8">Tu Carrito esta vacio</p>
+                            ) : (
+                                <div className="flow-root">
+                                    <ul className="divide-y divide-gray-300">
+                                        {
+                                            products.map((product) => (
+                                                <CartProduct key={product._id} product={product} />
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        }
+                    </div>
+
+                    {
+                        products.length > 0 && (
+                            <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
+                                <div className="flex justify-between text-base font-medium text-gray-900">
+                                    <p>Total</p>
+                                    <p>{formatCurrency(totalPrice, optionsCurrency)}</p>
+                                </div>
+
+                                <div className="mt-6">
+                                    <MercadoPagoButton
+                                        cart={products}
+                                        total={totalPrice}
+                                        onPaymentSuccess={handleCheckout}
+                                    />
+                                </div>
+                                <div className="mt-3 flex items-center justify-center text-sm text-gray-500">
+                                    <button
+                                        onClick={clearCart}
+                                        className="font-medium text-blue-600 hover:text-blue-500 cursor-pointer"
+                                    >
+                                        Vaciar carrito
+                                    </button>
+                                </div>
                             </div>
-                            <div className="mt-3 flex items-center justify-center text-sm text-gray-500">
-                               <button
-                                  onClick={clearCart}
-                                  className="font-medium text-blue-400 hover:text-blue-500 cursor-pointer"
-                               >
-                                  Vaciar carrito
-                               </button>
-                            </div>
-                        </div>
-                    )}
+                        )}
                 </div>
             </div>
         </>

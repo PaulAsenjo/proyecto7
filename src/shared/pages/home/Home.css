@@ -1,10 +1,11 @@
 
 .banner-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;  
     overflow: hidden;
     width: 100%;
+    height: 100%;
     margin-bottom: 0px;
 }
 
@@ -12,9 +13,8 @@
     overflow: hidden;
     position: relative;
     width: 40%;
-    height: 475px;
-    margin-right: 0px;
-    
+    height: 473px;
+    margin-right: 0px;  
 }
 
 .image-banner { 
@@ -22,16 +22,15 @@
     position: absolute;
     top: -6%;
     left: 0%;
-    translate:(-50%, -50%);
 }
 
 .video-container {
-    flex: 1; 
+    overflow: hidden;
+    width: 70%; /* Asegura que el video ocupe el 100% del contenedor */
 }
 
-.video-container video {
-    width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
-    object-fit: cover;
+.video {
+    
 }
 
 .huincha {

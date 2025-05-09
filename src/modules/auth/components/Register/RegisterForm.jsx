@@ -1,14 +1,14 @@
 import { useCallback, useContext, useEffect, useState } from "react"
-import { AuthContext } from "../../../context/authContext";
+import { AuthContext } from "../../../auth/context/authContext";
 import { useNavigate } from "react-router-dom";
 
 import { FormField } from "./FormFiled";
-import { ImageUploader } from "../../../../../shared/components/ImageUploader";
+import { ImageUploader } from "../../../../shared/components/ImageUploader";
 
 
-import { FORM_INITIAL_STATE } from "../../../utils/types/initialFormSate"; 
-import { useValidateRegisterForm } from "../../../hooks/useValidateRegisterForm";
-import { formatDataRegister } from "../../../utils/formaters/formatDataRegister";
+import { FORM_INITIAL_STATE } from "../../utils/types/initialFormSate"; 
+import { useValidateRegisterForm } from "../../hooks/useValidateRegisterForm";
+import { formatDataRegister } from "../../utils/formaters/formatDataRegister";
 
 
 
@@ -49,6 +49,8 @@ export const RegisterForm = () => {
 
         try {
             const formDataToSend = formatDataRegister(formData);
+
+            console.log("formDataToSend", formDataToSend);
             await register(formDataToSend);
             alert("Usuario registrado correctamente, por favor inicie sesión.");
             navigate("/login");

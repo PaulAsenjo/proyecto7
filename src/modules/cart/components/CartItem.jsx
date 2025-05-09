@@ -26,7 +26,7 @@ export const CartProduct = ({ product }) => {
             <div className="ml-4 flex-1 flex-flex-column">
                 <h3>{product.model}</h3>
                 <p className="ml-4">
-                {formatCurrency(product.price, optionsCurrency)}>
+                {formatCurrency(product.price, optionsCurrency)}
                 </p>                 
             </div>
 

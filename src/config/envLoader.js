@@ -7,4 +7,5 @@ export const envLoader = {
         minimumFractionDigits: Number(import.meta.env.VITE_MINIMUM_FRACTION_DIGITS) || 0,
         maximumFractionDigits: Number(import.meta.env.VITE_MAXIMUM_FRACTION_DIGITS) || 0,
     },
+    mp_publicKey: import.meta.env.VITE_MPPUBLIC_KEY
 }

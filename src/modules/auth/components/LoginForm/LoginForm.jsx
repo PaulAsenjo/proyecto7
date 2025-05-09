@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import { AuthContext } from "../../context/authContext";
 import { useNavigate } from "react-router-dom";
 
+import "./LoginForm.css"
 
 export const LoginForm = () => {
     const { login } = useContext(AuthContext);
@@ -28,26 +29,28 @@ export const LoginForm = () => {
 
     }
     return (
-        <form onSubmit={handleLogin}>
-            <div>
-                <label>Correo</label>
-                <input 
+        <form class="formulario" onSubmit={handleLogin}>
+            <div class="contenedor-etiqueta-email">
+                <label class="etiquetas">Correo</label>
+                <input class="inputs"
                     type="email"
                     value={correo}
                     onChange={event => setCorreo(event.target.value)}
                     required
                 />
             </div>
-            <div>
-                <label>Password</label>
-                <input 
+            <div class="contenedor-etiqueta-password">
+                <label class="etiquetas">Password</label>
+                <input class="inputs"
                     type="password"
                     value={password}
                     onChange={event => setPassword(event.target.value)}
                     required
                 />
             </div>
-            <button type="submit">Iniciar Sesión</button>
+            
+            <button class="button" type="submit">Iniciar Sesión</button>
+            
         </form>
     )
 }

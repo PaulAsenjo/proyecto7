@@ -5,6 +5,7 @@ import { AboutPage } from "../shared/pages/AboutPage"
 import { LoginPage } from "../modules/auth/pages/LoginPage/login"
 import { RegisterPage } from "../modules/auth/pages/Register/Register"
 import { ZapatillasPage } from "../modules/zapatillas/pages/ZapatillasPage/ZapatillasPage"
+import { MercadoPagoStatus } from "../modules/payments/components/MercadoPagoStatus"
 
 
 
@@ -19,7 +20,8 @@ export const AppRouter = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="register" element={<RegisterPage />} />  
-                <Route path="/sneakers" element={<ZapatillasPage />} />  
+                <Route path="/sneakers" element={<ZapatillasPage />} />
+                <Route path="/mercadopago/status" element={<MercadoPagoStatus />} />  
             </Routes>
         </>
     )

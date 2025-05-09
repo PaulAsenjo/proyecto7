@@ -11,11 +11,20 @@ export const ZapatillaCard = ({ zapatilla }) => {
 
     
     return (
+        
         <div className="card">
-            <div>
+            
+            <div className="contenedor-imagen">
                 <Link to={`/zapatillas/${zapatilla._id}`}></Link>
+                <img
+                  className="image-zapatilla"
+                  src={zapatilla.image}
+                  alt={zapatilla.model}
+                />
             </div>
+            
             <div className="card-body">
+            
             <div className="titulos-card">
                 <h2>
                     {zapatilla.brand}
@@ -25,7 +34,7 @@ export const ZapatillaCard = ({ zapatilla }) => {
                 </p>
 
                <div>
-                    <span>
+                    <span className="precio-card">
                         {formatCurrency(zapatilla.price, optionsCurrency)}
                     </span>
                 </div> 

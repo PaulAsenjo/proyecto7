@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react"
 import { fetchAllZapatillas } from "../services/fetchZapatillas";
 import { CardZapatillas } from "../components/CardZapatillas";
+import { Footer } from "../../../shared/components/Footer/Footer";
 
 
 export const AllZapatillasPage = () => {
@@ -25,6 +26,7 @@ export const AllZapatillasPage = () => {
                     ))
                 }
             </div>
+            
         </>
     )
 }

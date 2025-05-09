@@ -1,0 +1,85 @@
+.formulario {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 24rem; 
+    margin-top: 64px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.contenedor-etiqueta-email {
+    margin-bottom: 1.25rem;
+}
+
+.etiquetas {
+    display: block;             /* block */
+    margin-bottom: 0.5rem; 
+    font-family: "Red Hat Mono", monospace;    /* mb-2 (0.5rem) */
+    font-size: 0.875rem;       /* text-sm (0.875rem) */
+    font-weight: 500;          /* font-medium */
+    color: #1F2937;      
+}
+
+.inputs {
+    display: block; /* block */
+    width: 100%; /* w-full */
+    padding: 10px; /* p-2.5 */
+    background-color: #F9FAFB; /* bg-gray-50 */
+    border: 1px solid #D1D5DB; /* border border-gray-300 */
+    color: #111827; /* text-gray-900 */
+    font-size: 0.875rem; /* text-sm */
+    box-shadow: 0 0 0 2px transparent; /* focus:ring-blue-500 */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Animación para el foco */
+    border-color: #000000; /* focus:border-blue-500 */
+}
+
+.contenedor-etiqueta-password {
+    margin-bottom: 1.25rem;
+}
+
+.contenedor-boton {
+   
+}
+
+.button {
+    color: white; /* text-white */
+    background-color: #000000; /* bg-blue-700 */
+    font-family: "Red Hat Mono", monospace;
+    font-weight: 500; /* font-medium */
+    font-size: 0.875rem; /* text-sm */
+    width: 100%; /* w-full */
+    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+    text-align: center; /* text-center */
+    align-items: center;
+}
+
+/* Hover and Focus Effects */
+.button:hover {
+    background-color: #1F2937; 
+}
+
+.button:focus {
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5); /* focus:ring-4 focus:ring-blue-300 */
+}
+
+/* Small Screens */
+@media (min-width: 640px) {
+    .button {
+        width: auto; /* sm:w-auto */
+    }
+}
+
+/* Dark Mode Styles */
+.dark .button {
+    background-color: #1e3a8a; /* dark:bg-blue-600 */
+}
+
+.dark .button:hover {
+    background-color: #1e40af; /* dark:hover:bg-blue-700 */
+}
+
+.dark .button:focus {
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.5); /* dark:focus:ring-blue-800 */
+}

@@ -2,11 +2,12 @@
 
 .card{
     width: 17rem;
-    height: 24rem;
+    height: auto;
     overflow: hidden;
     border: 1px solid black;
     margin-top: 60px;
-    margin-left: 40px;
+  
+
 }
 
 .card-body{
@@ -14,10 +15,10 @@
     align-items: center;
     justify-content:space-between;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 7rem;
+    height: 6rem;
     overflow: hidden;
-    margin-top: 17rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .titulos-card h2{
@@ -25,19 +26,45 @@
     font-family: "Red Hat Mono", monospace;
     font-weight: 600;
     font-style: normal;
+    margin-left: 10px;
 }
 
 .titulos-card p{
     font-size: 14px;
+    color: black;
     font-family: "Red Hat Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin-left: 10px;
+}
+
+.precio-card{
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    margin-left: 10px;
+    color: #545454;
+}
+
+.contenedor-imagen {
+    justify-content: center; /* Alinea horizontalmente */
+    align-items: center; 
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-zapatilla{
+        
+   
 }
 
 .contenedor-boton{
-    float: right;
+    width: 103%;
+    height: 50%;
     align-items: center;
     margin-right: 0rem;
+    margin-left: 0rem;
 
 }
