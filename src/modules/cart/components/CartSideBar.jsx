@@ -22,13 +22,13 @@ export const CartSideBar = ({ onClose }) => {
         <>
             <div
               onClick={onClose}
-              className="fixed inset-0 bg-gray-800/30 backdrop-blur-sm transition-opacity duration-300"
+              className="fixed z-1 inset-0 bg-gray-800/30 backdrop-blur-sm transition-opacity duration-300"
             ></div>
 
-<div className="fixed inset-y-0 right-0 max-w-md bg-white shadow-2xl transform transition-all ease-in-out duration-300">
+<div className="fixed z-1 inset-y-0 right-0 max-w-md bg-white shadow-2xl transform transition-all ease-in-out duration-300">
                 <div className="h-full flex flex-col overflow-y-auto">
                     <div className="px-4 py-6 sm:px-6 border-b border-gray-200">
-                        <h2 className="text-lg font-medium text-gray-900">
+                        <h2 className="text-lg font-medium text-gray-900" style={{ fontFamily: 'Red Hat Mono', fontWeight: '600'}}>
                             Carrito de compras
                         </h2>
                         <button
@@ -42,10 +42,10 @@ export const CartSideBar = ({ onClose }) => {
                     <div className="flex-1 px-4 sm:px-6 overflow-y-auto">
                         {
                             products.length === 0 ? (
-                                <p className="text-center py-8">Tu Carrito esta vacio</p>
+                                <p className="text-center py-8">Tu Carrito esta vacio style={{ fontFamily: 'Red Hat Mono', fontWeight: '400'}}</p>
                             ) : (
                                 <div className="flow-root">
-                                    <ul className="divide-y divide-gray-300">
+                                    <ul className="divide-y divide-gray-300" style={{ fontFamily: 'Red Hat Mono', fontWeight: '400'}}>
                                         {
                                             products.map((product) => (
                                                 <CartProduct key={product._id} product={product} />
@@ -61,8 +61,8 @@ export const CartSideBar = ({ onClose }) => {
                         products.length > 0 && (
                             <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                                 <div className="flex justify-between text-base font-medium text-gray-900">
-                                    <p>Total</p>
-                                    <p>{formatCurrency(totalPrice, optionsCurrency)}</p>
+                                    <p style={{ fontFamily: 'Red Hat Mono', fontWeight: '600'}}>Total </p>
+                                    <p style={{ fontFamily: 'Red Hat Mono', fontWeight: '600'}}>{formatCurrency(totalPrice, optionsCurrency)}</p>
                                 </div>
 
                                 <div className="mt-6">
@@ -76,6 +76,7 @@ export const CartSideBar = ({ onClose }) => {
                                     <button
                                         onClick={clearCart}
                                         className="font-medium text-blue-600 hover:text-blue-500 cursor-pointer"
+                                        style={{ fontFamily: 'Red Hat Mono', fontWeight: '600'}}
                                     >
                                         Vaciar carrito
                                     </button>

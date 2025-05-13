@@ -1,0 +1,45 @@
+.contenedor-boton-carrito {
+    position: relative;  /* Para 'relative' */
+    display: inline-block; 
+}
+
+
+.button-carrito {
+        padding: 0.5rem; /* p-2 */
+        color: #4A5568; /* text-gray-700 */
+        border-left: 1px solid #000; /* border-l border-black */
+        padding-left: 1rem; /* px-4 */
+        padding-right: 1rem; /* px-4 */
+        padding-top: 0.5rem; /* py-2 */
+        padding-bottom: 0.5rem; /* py-2 */
+        transition: color 0.2s; /* Transición para el hover */
+}
+    
+.button-carrito:hover {
+        color: #1F2937; /* hover:text-gray-900 */
+    }
+    
+ .button-carrito:focus {
+    outline: none; /* focus:outline-none */
+    }
+.imagen-carrito {
+    width: 28px;  /* Equivalente a w-7 */
+    height: 28px
+}
+
+.items-carrito {
+    position: absolute;  /* equivalent to absolute */
+    top: 0.25rem;        /* equivalent to -top-1 */
+    right: 0.25rem;      /* equivalent to -right-1 */
+    background-color: #1f1f1f; /* equivalent to bg-stone-950 (color #1f1f1f) */
+    color: white;        /* equivalent to text-white */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    width: 1.25rem;      /* equivalent to w-5 (width 5 * 0.25rem) */
+    height: 1.25rem;     /* equivalent to h-5 (height 5 * 0.25rem) */
+    display: flex;       /* equivalent to flex */
+    align-items: center; /* equivalent to items-center */
+    justify-content: center; /* equivalent to justify-center */
+    font-size: 0.75rem;  /* equivalent to text-xs */
+    font-family: 'Monaco', monospace;
+    
+}

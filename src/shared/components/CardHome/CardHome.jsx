@@ -26,16 +26,16 @@ export const CardZapatilla = () => {
 
 
         <div className="card2">
-            <div className="card-header">
+            <div className="card-header1">
                 <img className="imagen-zapatilla" src="/public/imagenes/home2.png" alt="imagen zapatilla adidas"></img>
             </div>
-            <div className="card-body">
-                <div className="contenedor-title-precio">
+            <div className="card-body2">
+                <div className="contenedor-title-precio2">
                 <p className="card-title">Nike Shox R4</p>
                 <p className="card-precio">$150.980</p>
                 </div>
-            <div className="contenedor-boton">
-                <button className="boton-card">+</button>
+            <div className="contenedor-boton2">
+                <button className="boton-card2">+</button>
             </div>
             </div>            
         </div>

@@ -40,6 +40,8 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-left: 19rem;
+   margin-right: 10rem;
   }
 
   .isotipo {
@@ -48,12 +50,34 @@
     left: 10%;
   }
 
+  .contenedor-login-register {
+   display: flex;
+   margin-left: 3rem;
+
+   
+
+  }
+
   .texto-login{
     font-family: "Red Hat Mono", monospace;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     cursor: pointer;  
+    border-left: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  
+  .texto-register {
+    font-family: "Red Hat Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;  
+    border-left: 1px solid black;
+    padding-left: 20px;
   }
   
   /* Responsivo */

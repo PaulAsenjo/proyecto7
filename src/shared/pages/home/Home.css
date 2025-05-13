@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+  }
+
 
 .banner-container {
     display: flex;
@@ -12,7 +17,7 @@
 .image-container {
     overflow: hidden;
     position: relative;
-    width: 40%;
+    width: 100%;
     height: 473px;
     margin-right: 0px;  
 }
@@ -63,6 +68,30 @@
     text-transform:uppercase;
     letter-spacing: 0.2rem;
     animation: scroll-left 10s linear infinite;
+}
+
+
+.titulo-trending {
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform:uppercase;
+    margin-top: 70px;
+}
+
+
+.container-trending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.imagen-tarjetas {
+    width: 80%;
 }
 
 @keyframes scroll-left {

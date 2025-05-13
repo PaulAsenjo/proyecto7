@@ -8,3 +8,19 @@
 .brands{
     width: 90%;
 }
+
+.contendor-seccion{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.titulo-seccion {
+    font-family: "Red Hat Mono", monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform:uppercase;
+    margin-top: 40px;
+}

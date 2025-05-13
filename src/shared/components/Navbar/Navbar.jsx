@@ -27,13 +27,14 @@ export const Navbar = () => {
             <img src={isotiposvg} alt="Imagen isotipo" className="isotipo"/>
             </div>
            
-            <div className="border-l border-black px-4">
+            <div className="contenedor-login-register">
                 {
                     !user ? (
                         <>
-                        
+                        <div className="contenedor-botones">
                         <Link to="/login" className="texto-login">Login</Link>
                         <Link to="/register" className="texto-register">Register</Link>
+                        </div>
                         
                         </>
                     ) : (

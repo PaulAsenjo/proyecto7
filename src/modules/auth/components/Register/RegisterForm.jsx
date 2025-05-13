@@ -11,7 +11,6 @@ import { useValidateRegisterForm } from "../../hooks/useValidateRegisterForm";
 import { formatDataRegister } from "../../utils/formaters/formatDataRegister";
 
 
-
 export const RegisterForm = () => {
     const { register } = useContext(AuthContext)
     const navigate = useNavigate();
@@ -61,7 +60,7 @@ export const RegisterForm = () => {
     }
 
     return(
-        <form onSubmit={handleSubmit} className="space-y-4" >
+        <form onSubmit={handleSubmit} className="space-y-4">
             {
                 formError && (
                     <div className="bg-red-200 text-red-700 p-3 rounded-md">
@@ -118,7 +117,7 @@ export const RegisterForm = () => {
                 error={errors.fecha_nacimiento}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="container-password">
                 <FormField
                     id="password"
                     label="Contraseña"

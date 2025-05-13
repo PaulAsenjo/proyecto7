@@ -41,13 +41,7 @@ export const ZapatillaCard = ({ zapatilla }) => {
                 <div className="contenedor-boton">              
                 <CartAddButton product={zapatilla} />
                 </div> 
-                {/**<div>
-                    <span>
-                        {producto.stock > 0
-                            ? `${producto.stock} disponible(s)`
-                            : "Agotado"}
-                    </span>
-                </div>*/}
+                
             </div>
             </div>
         </div>

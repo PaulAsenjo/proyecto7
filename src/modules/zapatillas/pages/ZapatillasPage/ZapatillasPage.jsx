@@ -1,4 +1,5 @@
 import { Footer } from "../../../../shared/components/Footer/Footer";
+import  ScrollToTop   from "../../../../shared/components/ScrollToTop/ScrollToTop";
 import { ZapatillaCard } from "../../components/ZapatillasCard";
 import { useFetchProducts } from "../../hooks/useFetchProducts"
 
@@ -40,6 +41,7 @@ export const ZapatillasPage = () => {
             </div>
             
             </div>
+            <ScrollToTop />
             <Footer />
         </>
 

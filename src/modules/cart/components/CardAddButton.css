@@ -6,13 +6,16 @@
     padding: 0rem 5.5rem; /* py-8 px-8 */
     font-family: 'Monaco', monospace; /* font-mono */
     transition: background-color 300ms; /* transition-colors duration-300 */
+    padding-top: 8px;
+    padding-bottom: 10px;
 }
 
 .boton-agregar:hover {
-    background-color: #3b82f6; /* hover:bg-blue-700 */
+    background-color: #1F2937; 
 }
 
 .boton-agregar p {
     align-items: center;
     justify-content: center;
+    color: #000000;
 }
