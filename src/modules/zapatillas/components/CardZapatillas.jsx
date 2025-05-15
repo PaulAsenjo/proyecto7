@@ -38,21 +38,6 @@ export const ZapatillaCard = ({ zapatilla }) => {
 }
 
 
-{/**
-     <div className="card">
-            <div className="card-header">
-                <img className="imagen-zapatilla" src="/public/imagenes/home1.png" alt="imagen zapatilla nike"></img>
-            </div>
-            <div className="card-body">
-                <div className="contenedor-title-precio">
-                <p className="card-title">Nike Shox R4</p>
-                <p className="card-precio">$150.980</p>
-                </div>
-            <div className="contenedor-boton">
-                <button className="boton-card">+</button>
-            </div>
-            </div>            
-        </div> */}
 
 
 
@@ -66,16 +51,8 @@ export const ZapatillaCard = ({ zapatilla }) => {
 
 
 
-{/**export const CardZapatillas = ({ zapatilla }) => {
-    return (
-        <div className="card">
-            <h2>{zapatilla.brand}</h2>
-            <p>Modelo:{zapatilla.model}</p>
-            <p>Colorway:{zapatilla.colorway}</p>
-            <p>Año lanzamiento:{zapatilla.releaseYear}</p>
-        </div>
-    );
-}**/}
+
+
 
 
 

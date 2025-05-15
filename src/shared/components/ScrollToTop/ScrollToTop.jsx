@@ -12,7 +12,7 @@ function ScrollToTop() {
       onClick={scrollToTop} 
       style={{
         position: 'fixed',
-        bottom: '320px',
+        top: '590px',
         right: '-100px',
         padding: '4px',
         cursor: 'pointer',
